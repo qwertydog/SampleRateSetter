@@ -82,6 +82,7 @@ namespace SampleRateSetter
             Thread.Sleep(1000);
             NativeMethods.FindWindow(IntPtr.Zero, "Sound");
 
+            // Select device
             SendKeys.SendWait("{DOWN}");
             SendKeys.SendWait("{DOWN}");
 
@@ -93,7 +94,13 @@ namespace SampleRateSetter
                 SendKeys.SendWait("{DOWN}");
             }
 
+            // Set default
+            SendKeys.SendWait("%S");
+
+            // Open properties
             SendKeys.SendWait("%P");
+
+            // Select Advanced tab
             SendKeys.SendWait("{TAB}");
             SendKeys.SendWait("{TAB}");
             SendKeys.SendWait("{TAB}");
@@ -106,7 +113,10 @@ namespace SampleRateSetter
             if (device == Device.ASUS)
                 SendKeys.SendWait("{RIGHT}");
 
+            // Select sample rate combo box
             SendKeys.SendWait("{TAB}");
+
+            // Change sample rate
             SendKeys.SendWait("{DOWN}");
             SendKeys.SendWait("{DOWN}");
             SendKeys.SendWait("{DOWN}");
@@ -122,6 +132,7 @@ namespace SampleRateSetter
             if (sampleRate == SampleRate.FourtyFourOneHunded)
                 SendKeys.SendWait("{UP}");
 
+            // Confirm changes
             SendKeys.SendWait("{ENTER}");
             SendKeys.SendWait("{ENTER}");
         }
