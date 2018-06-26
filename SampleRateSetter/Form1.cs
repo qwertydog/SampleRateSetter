@@ -15,7 +15,7 @@ namespace SampleRateSetter
         {
             InitializeComponent();
 
-            contextMenuStrip1.Items.Insert(0, new ToolStripLabel("Set Sample Rate"));
+            contextMenuStrip1.Items.Insert(0, new ToolStripLabel("Set Sample Rate") { Enabled = false });
         }
 
         /// <summary>

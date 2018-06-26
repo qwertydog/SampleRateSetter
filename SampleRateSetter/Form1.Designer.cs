@@ -30,6 +30,7 @@
             this.schiitGroupBox = new System.Windows.Forms.GroupBox();
             this.schiit48000Button = new System.Windows.Forms.Button();
             this.schiit44100Button = new System.Windows.Forms.Button();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.contextMenuStrip1.SuspendLayout();
             this.asusGroupBox.SuspendLayout();
             this.schiitGroupBox.SuspendLayout();
@@ -66,46 +67,47 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripSeparator1,
             this.schiit44100,
             this.schiit48000,
             this.aSUS44100ToolStripMenuItem,
             this.aSUS48000ToolStripMenuItem,
             this.closeToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(137, 114);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 142);
             // 
             // schiit44100
             // 
             this.schiit44100.Name = "schiit44100";
-            this.schiit44100.Size = new System.Drawing.Size(136, 22);
+            this.schiit44100.Size = new System.Drawing.Size(180, 22);
             this.schiit44100.Text = "Schiit 44100";
             this.schiit44100.Click += new System.EventHandler(this.schiit44100ToolStripItem_Click);
             // 
             // schiit48000
             // 
             this.schiit48000.Name = "schiit48000";
-            this.schiit48000.Size = new System.Drawing.Size(136, 22);
+            this.schiit48000.Size = new System.Drawing.Size(180, 22);
             this.schiit48000.Text = "Schiit 48000";
             this.schiit48000.Click += new System.EventHandler(this.schiit48000ToolStripItem_Click);
             // 
             // aSUS44100ToolStripMenuItem
             // 
             this.aSUS44100ToolStripMenuItem.Name = "aSUS44100ToolStripMenuItem";
-            this.aSUS44100ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.aSUS44100ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aSUS44100ToolStripMenuItem.Text = "ASUS 44100";
             this.aSUS44100ToolStripMenuItem.Click += new System.EventHandler(this.aSUS44100ToolStripMenuItem_Click);
             // 
             // aSUS48000ToolStripMenuItem
             // 
             this.aSUS48000ToolStripMenuItem.Name = "aSUS48000ToolStripMenuItem";
-            this.aSUS48000ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.aSUS48000ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aSUS48000ToolStripMenuItem.Text = "ASUS 48000";
             this.aSUS48000ToolStripMenuItem.Click += new System.EventHandler(this.aSUS48000ToolStripMenuItem_Click);
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.closeToolStripMenuItem.Text = "Close";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
             // 
@@ -151,6 +153,11 @@
             this.schiit44100Button.UseVisualStyleBackColor = true;
             this.schiit44100Button.Click += new System.EventHandler(this.schiit44100Button_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -186,6 +193,7 @@
         private System.Windows.Forms.GroupBox schiitGroupBox;
         private System.Windows.Forms.Button schiit48000Button;
         private System.Windows.Forms.Button schiit44100Button;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }
 
